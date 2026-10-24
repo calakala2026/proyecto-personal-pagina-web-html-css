@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 200px;
+    font-family: Arial, sans-serif;
+    background-color: cadetblue;
+    color: blueviolet;
+    line-height: 0.5;
+}
+
+a {
+    color: #861a45;
+    text-decoration: none;
+}
+
+.cabecera {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 7%;
+    background-color: aliceblue;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a:hover {
+    color: chartreuse;
+}
+
+.hero {
+    padding: 90px 7%;
+    text-align: center;
+    background-color: black;
+}
+
+.hero h1 {
+    max-width: 800px;
+    margin: 10px auto;
+    font-size: calc(2em);
+    line-height: 1.15;
+}
