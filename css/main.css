@@ -1,23 +1,28 @@
+
+
 * {
     box-sizing: border-box;
+    width: fit-content;
+    height: auto;
+
 }
 
 body {
-    margin: 200px;
+    margin: 0px;
     font-family: Arial, sans-serif;
-    background-color: cadetblue;
+    background-color: rgb(154, 179, 185);
     color: blueviolet;
     line-height: 0.5;
 }
 
 a {
-    color: #861a45;
+    color: #0106137d;
     text-decoration: none;
 }
 
 .cabecera {
     display: grid;
-    justify-content: space-between;
+    justify-content: content;
     align-items: center;
     gap: 20px;
     padding: 20px 7%;
@@ -25,14 +30,14 @@ a {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 150px;
     font-weight: bold;
 }
 
 nav {
     display: grid;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: nowrap;
+    gap: 10px;
 }
 
 nav a:hover {
@@ -50,4 +55,75 @@ nav a:hover {
     margin: 10px auto;
     font-size: calc(2em);
     line-height: 1.15;
+}
+
+.etiqueta {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 22px;
+    background-color: brown;
+    color: white;
+    border-radius: 9px;
+}
+
+.boton:hover {
+    background-color: aqua;
+}
+
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 55px 24px;
+}
+
+.imagen-portada {
+    display: block;
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    padding: 12px;
+}
+
+.pie {
+    padding: 4px;
+    text-align: center;
+    background-color: chocolate;
+    color: white;
+}
+
+ @media only screen and (min-width: 768px) {
+    .cabecera {
+        grid-area: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    background-color: blue;
+
+
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    background-color: green;
+
+
 }

@@ -1,0 +1,25 @@
+body {
+    background-color: blue;
+}
+
+.responsive-box {
+    width: 50%;
+    min-width: 200px; /* No se reducirá por debajo de 200px */
+    max-width: 600px; /* No se expandirá por encima de 600px */
+    height: 100px;
+    background-color: lightblue;
+}
+
+.centered-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: 0 auto; /* Centrando horizontalmente */
+    background-color: lightgreen;
+}
+h2 {
+    height: 57%;
+    width: 40%;
+    font-size: x-large;
+
+}
